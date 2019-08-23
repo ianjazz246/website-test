@@ -3,10 +3,3 @@ set -e # halt script on error
 
 bundle exec jekyll build
 bundle exec htmlproofer ./_site
-
-git add -A
-git config --global user.email "ianjazz246@gmail.com"
-git config --global user.name "ianjazz246"
-git commit -m "Travis built deploy site"
-
-git push "$GH_TOKEN":random_text@github.com/ianjazz246/website-test.git gh-pages > /dev/null 2>&1
