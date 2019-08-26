@@ -32,7 +32,7 @@ notifications:
   
 deploy:
   provider: pages
-  local-dir: ./_site
+  local-dir: ./_site/website-test
   target-branch: gh-pages
   skip-cleanup: true
   github-token: $GH_TOKEN
