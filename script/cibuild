@@ -3,8 +3,8 @@ set -e # halt script on error
 
 bundle exec jekyll build
 
-mv _site website-test
+mv ./_site ./website-test
 
-bundle exec htmlproofer ./_site 
+bundle exec htmlproofer ./website-test
 
-mv website-test _site 
+mv ./website-test ./_site 
