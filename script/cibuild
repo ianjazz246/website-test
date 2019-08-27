@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-bundle exec jekyll build
+#Output in subdirectory because of baseurl
+bundle exec jekyll build -d _site/website-test
 
-#mv ./_site ./website-test
-
-#bundle exec htmlproofer ./website-test
-
-#mv ./website-test ./_site 
+bundle exec htmlproofer --assume-extension ./_site
