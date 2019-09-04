@@ -4,4 +4,4 @@ set -e # halt script on error
 #Output in subdirectory because of baseurl
 bundle exec jekyll build -d _site/website-test
 
-bundle exec htmlproofer --assume-extension ./_site
+bundle exec htmlproofer --url-ignore \"https://ianjazz246.github.io/\" --assume-extension ./_site
