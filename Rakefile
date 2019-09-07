@@ -3,6 +3,7 @@ require 'html-proofer'
 
 desc "Test the website"
 task :test do
+  #sh "bundle exec jekyll build -d _site/website-test"
   options = {
     :assume_extension => true,
     :check_sri => true,
@@ -20,8 +21,8 @@ task :test do
   }
   begin
     HTMLProofer.check_directory("_site", options).run
-  rescue => msg
-    puts "#{msg}"
+  #rescue => msg
+    #puts "#{msg}"
   end
 end
 
