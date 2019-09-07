@@ -8,4 +8,4 @@ bundle exec jekyll build -d _site/website-test
 cd _site/website-test
 ls .
 cd ../..
-bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:" --assume-extension --verbose --directory_index_file /website-test/index.html ./_site
+bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:" --assume-extension --directory_index_file _site/website-test/index.html ./_site
