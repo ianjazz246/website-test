@@ -4,8 +4,8 @@ set -e # halt script on error
 #Output in subdirectory because of baseurl
 bundle exec jekyll build -d _site/website-test
 
-#bundle exec rake test
-cd _site/website-test
-ls -l .
-cd ../..
-bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:,http\://ianjazz246.github.io/website-test:" --assume-extension --directory_index_file _site/website-test/index.html ./_site
+bundle exec rake test
+#cd _site/website-test
+#ls -l .
+#cd ../..
+#bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:,http\://ianjazz246.github.io/website-test:" --assume-extension --directory_index_file _site/website-test/index.html ./_site
