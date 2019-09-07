@@ -13,11 +13,13 @@ task :test do
     :check_opengraph => true,
     :enforce_https => true,
     :url_swap => {
-      "https://ianjazz246.github.io/website-test" => ""
+      "https://ianjazz246.github.io/website-test" => "",
+      "http://ianjazz246.github.io/website-test" => "",
      },
-    :cache => {
-      :timeframe => '6w'
-    }
+    :directory_index_file => "_site/website-test/index.html"
+    #:cache => {
+    #  :timeframe => '6w'
+    #}
   }
   begin
     HTMLProofer.check_directory("_site", options).run
