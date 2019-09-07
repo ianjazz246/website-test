@@ -5,4 +5,4 @@ set -e # halt script on error
 bundle exec jekyll build -d _site/website-test
 
 #bundle exec rake test
-bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:"  --assume-extension ./_site
+bundle exec htmlproofer --url-swap "https\://ianjazz246.github.io/website-test:" --assume-extension --directory_index_file /website-test/index.html ./_site
