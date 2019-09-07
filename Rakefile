@@ -12,10 +12,10 @@ task :test do
     :check_img_http => true,
     :check_opengraph => true,
     :enforce_https => true,
-    :url_swap => {
-      "https://ianjazz246.github.io/website-test" => "website-test",
-      "http://ianjazz246.github.io/website-test" => "website-test",
-     },
+    #:url_swap => {
+    # "https://ianjazz246.github.io/website-test" => "website-test",
+    # "http://ianjazz246.github.io/website-test" => "website-test",
+    #},
     :directory_index_file => "_site/website-test/index.html"
     #:cache => {
     #  :timeframe => '6w'
