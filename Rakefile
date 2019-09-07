@@ -2,7 +2,7 @@ abort('Please run this using `bundle exec rake`') unless ENV["BUNDLE_BIN_PATH"]
 require 'html-proofer'
 
 desc "Test the website"
-task :test => [:build, 'html:check'] do
+task :test => do
   options = {
     :assume_extension => true,
     :check_sri => true,
