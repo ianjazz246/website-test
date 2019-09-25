@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
+#Profile build
+bundle exec jekyll build --profile
+
 #Output in subdirectory because of baseurl
 bundle exec jekyll build -d _site/website-test
 
